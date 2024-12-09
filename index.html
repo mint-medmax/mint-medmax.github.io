@@ -6,7 +6,7 @@
         content="Mixed-Modal Instruction Tuning for Training Biomedical Assistants">
   <meta name="keywords" content="MedMax, Med Max">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MedMax: Evaluating Math Reasoning in Visual Contexts</title>
+  <title> MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -256,20 +256,20 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p>
-          <b>Large Language Models (LLMs)</b> and <b>Large Multimodal Models (LMMs)</b> exhibit impressive problem-solving skills in many tasks and domains, but their ability in mathematical reasoning in visual contexts has not been systematically studied.
-          </p>
-          <p>
-            To bridge this gap, we present <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="MedMax">MedMax</span>, a benchmark designed to combine challenges from diverse mathematical and visual tasks. It consists of <b>6,141 examples</b>, derived from <b>28 existing multimodal datasets</b> involving mathematics and <b>3 newly created datasets</b> (i.e., <b>IQTest, FunctionQA, and PaperQA</b>). Completing these tasks requires fine-grained, deep visual understanding and compositional reasoning, which all state-of-the-art foundation models find challenging. 
-          </p>
-          <p>
-            With <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="MedMax">MedMax</span>, we have conducted <b>a comprehensive, quantitative evaluation of 12 prominent foundation models</b>. The best-performing <b>GPT-4V</b> model achieves an overall accuracy of <b>49.9%</b>, substantially outperforming Bard, the second-best performer, by <b>15.1%</b>. Our in-depth analysis reveals that the superiority of <b>GPT-4V</b> is mainly attributed to its enhanced visual perception and mathematical reasoning. However, <b>GPT-4V</b> still falls short of human performance by <b>10.4%</b>, as it often struggles to understand complex figures and perform rigorous reasoning. This significant gap underscores the critical role that <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="MedMax">MedMax</span> will play in the development of general-purpose AI agents capable of tackling mathematically intensive and visually rich real-world tasks. We further explore the new ability of <b>self-verification</b>, the use of <b>self-consistency</b>, and the  <b>goal-directed multi-turn human-AI dialogues</b>, highlighting the promising potential of GPT-4V for future research. 
-          </p>
-        </div>
+          <div class="content has-text-justified">
+            <p>
+              <b>Large Language Models (LLMs)</b> and <b>Large Multimodal Models (LMMs)</b> have demonstrated remarkable capabilities in multimodal information integration, opening transformative possibilities for biomedical AI applications. However, their potential in medical domains remains constrained by limited data availability, narrow domain coverage, and restricted data sources.
+            </p>
+            <p>
+              To address these gaps, we present <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span class="MedMax">MedMax</span>, the first large-scale multimodal biomedical instruction-tuning dataset for mixed-modal foundation models. Comprising <b>1.47 million instances</b>, <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span class="MedMax">MedMax</span> encompasses diverse tasks including multimodal content generation, biomedical image captioning and generation, visual chatting, and report understanding. These tasks span crucial medical domains such as radiology and histopathology.
+            </p>
+            <p>
+              Through fine-tuning a mixed-modal foundation model on <img src="static/images/medmax.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span class="MedMax">MedMax</span>, we achieve significant performance improvements: a <b>26% gain</b> over the base Chameleon model and an <b>18.3% improvement</b> over GPT-4 across <b>12 downstream biomedical visual question-answering tasks</b>. Additionally, we introduce a unified evaluation suite for biomedical tasks, providing a robust framework to guide the development of next-generation mixed-modal biomedical AI assistants.
+            </p>
+          </div>
       </div>
     </div>
     <!--/ Abstract. -->
