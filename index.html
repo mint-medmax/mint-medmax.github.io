@@ -533,7 +533,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>@misc{bansal2024medmaxmixedmodalinstructiontuning,
+    <div style="position: relative;">
+      <button 
+        onclick="copyBibtex()" 
+        style="position: absolute; top: 8px; right: 8px; padding: 8px; border: none; background: #f5f5f5; border-radius: 4px; cursor: pointer;"
+        id="copyButton">
+        Copy
+      </button>
+      <pre><code id="bibtex">@misc{bansal2024medmaxmixedmodalinstructiontuning,
       title={MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants}, 
       author={Hritik Bansal and Daniel Israel and Siyan Zhao and Shufan Li and Tung Nguyen and Aditya Grover},
       year={2024},
@@ -542,8 +549,27 @@
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2412.12661}, 
 }</code></pre>
+    </div>
   </div>
 </section>
+
+<script>
+function copyBibtex() {
+  const bibtex = document.getElementById('bibtex').innerText;
+  navigator.clipboard.writeText(bibtex);
+  
+  const button = document.getElementById('copyButton');
+  button.innerText = 'Copied!';
+  button.style.background = '#4CAF50';
+  button.style.color = 'white';
+  
+  setTimeout(() => {
+    button.innerText = 'Copy';
+    button.style.background = '#f5f5f5';
+    button.style.color = 'black';
+  }, 2000);
+}
+</script>
 
 <section>
   <div class="section" id="org-banners" style="display:flex">
