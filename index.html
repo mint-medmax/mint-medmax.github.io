@@ -492,43 +492,52 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-  <h1 class="title is-1 mathvista">
-    <img src="static/images/medmax.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mathvista" style="vertical-align: middle">Experiment Results</span>
-  </h1>
+    <h1 class="title is-1 mathvista">
+      <img src="static/images/medmax.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+      <span class="mathvista" style="vertical-align: middle">Experiment Results</span>
+    </h1>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div id="experiment-results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/perf_image_cap_gen_fig7.png" alt="image name" width="90%"/>
-              <p>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <!-- First result -->
+          <div class="box mb-5">
+            <div class="has-text-centered">
+              <img src="static/images/results-figures/perf_image_cap_gen_fig7.png" alt="Performance on image captioning and generation" style="max-width: 90%; height: auto;"/>
+              <p class="mt-4">
                 <b>Performance on the image captioning and image generation tasks.</b> We find that MedMax model consistency outperforms the base Chameleon mixed-modal model across diverse biomedical domains.
               </p>
             </div>
           </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/multimodal_gen_fig8.png" alt="image name" width="40%"/>
-              <p> <b>Performance on the multimodal generation task.</b> Comparison between the performance of the MedMax and Chameleon mixed-modal model on the multimodal generation task. (a) We use LLM score to assess the quality of the generated data against the reference answer. (b) We use the image-image similarity score using BioMedCLIPScore to compare the generated image and reference image. We find that MedMax finetuning improves the multimodal content generation capabilities for the biomedical domain.
+          
+          <!-- Second result -->
+          <div class="box mb-5">
+            <div class="has-text-centered">
+              <img src="static/images/results-figures/multimodal_gen_fig8.png" alt="Performance on multimodal generation" style="max-width: 60%; height: auto;"/>
+              <p class="mt-4">
+                <b>Performance on the multimodal generation task.</b> Comparison between the performance of the MedMax and Chameleon mixed-modal model on the multimodal generation task. (a) We use LLM score to assess the quality of the generated data against the reference answer. (b) We use the image-image similarity score using BioMedCLIPScore to compare the generated image and reference image. We find that MedMax finetuning improves the multimodal content generation capabilities for the biomedical domain.
               </p>
             </div>
           </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/visual_chabot_compare_fig9.png" alt="image name" width="75%"/>
-              <p> <b>Performance on the visual chat task. </b> Comparison between the visual chat performance of MedMax model and several baselines. We find that the chatting capabilities of our model is quite competitive, suggesting its ability to answer novel queries about biomedical images. </p>
+          
+          <!-- Third result -->
+          <div class="box mb-5">
+            <div class="has-text-centered">
+              <img src="static/images/results-figures/visual_chabot_compare_fig9.png" alt="Performance on visual chat" style="max-width: 75%; height: auto;"/>
+              <p class="mt-4">
+                <b>Performance on the visual chat task.</b> Comparison between the visual chat performance of MedMax model and several baselines. We find that the chatting capabilities of our model is quite competitive, suggesting its ability to answer novel queries about biomedical images.
+              </p>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
